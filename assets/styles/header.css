@@ -32,9 +32,26 @@ header .container {
 	background-color: #565656;
 	height: 2px;
 	margin-bottom: 6px;
+    transition: .3s;
+
 }
 .mobile-toggler i:last-child {
+
+
+}
+.mobile-toggler i:first-child.-cross {
+	transform: rotate(-45deg);
 	margin: 0;
+	width: 25px;
+
+}
+.mobile-toggler i:nth-child(2).-cross   {
+	transform: rotate(45deg);
+		margin: -1px;	
+	width: 25px;
+}
+.mobile-toggler i:last-child.-cross{
+	display: none;
 }
 .mobile-menu {
 	position: fixed;
