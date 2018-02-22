@@ -19,4 +19,36 @@ ul {
 	padding: 0;
 }
 
+h1 {
+	font-size: 90px;
+}
+ 
+h2 {
+	font-size: 22px;
+	font-weight: 200;
+}
+.-animated {
 
+}
+h1.-from-above {
+	transform: translateY(-100%);
+		transition: 1s ease-out;
+}
+
+h2.-from-bottom {
+	transform: translateY(100%);
+		transition: 2s ease-out;
+
+}
+h1.-animated,
+h2.-animated {
+	transform: translateY(0);
+}
+.title, .subtitle {
+	overflow: hidden;
+}
+.title {
+
+}
+.subtitle {
+}

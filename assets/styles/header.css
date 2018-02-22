@@ -40,18 +40,19 @@ header .container {
 
 }
 .mobile-toggler i:first-child.-cross {
-	transform: rotate(-45deg);
-	margin: 0;
-	width: 25px;
+	
 
+	display: none;
 }
 .mobile-toggler i:nth-child(2).-cross   {
-	transform: rotate(45deg);
+	transform: rotate(-45deg);
 		margin: -1px;	
-	width: 25px;
+	width: 26px;
 }
 .mobile-toggler i:last-child.-cross{
-	display: none;
+	transform: rotate(45deg);
+	margin: 0;
+	width: 26px;
 }
 .mobile-menu {
 	position: fixed;
@@ -77,3 +78,30 @@ header .container {
 	transform:translateX(0);
 }
 
+.header-desktop {
+	display: none;
+}
+.header-mobile {
+	display: block;
+}
+
+@media screen and (min-width: 600px) {
+	.header-desktop {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.header-mobile {
+	display: none;
+}
+ .header-logo {
+ 	margin-right: 35px;
+ }
+ header .container{
+	justify-content: flex-start;
+
+ }
+ .header-links a {
+ 	margin-right: 15px;
+ }
+}
