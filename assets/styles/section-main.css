@@ -5,8 +5,14 @@
 	display: flex;
 	align-items: center;
 	height: calc(100vh - 60px);
+  z-index: 3;
+  
 }
+.section-main .container {
+z-index: 2;
+	}
  .-animated {
+}
 
 }
 h1.-from-above {
@@ -37,10 +43,175 @@ h2.-animated {
 @media screen and (min-width: 400px)
 {
  h1 {
- 	font-size: 70px;
+ 	font-size: 100px;
 
  }
  h2 {
- 	font-size: 17px;
+ 	font-size: 19px;
  }
+}
+@media screen and (min-width: 565px)
+{
+ h1 {
+ 	font-size: 110px;
+
+ }
+ h2 {
+ 	font-size: 24px;
+ }
+}
+@media screen and (min-width: 600px)
+{
+ h1 {
+ 	font-size: 115px;
+
+ }
+ h2 {
+ 	font-size: 26px;
+ }
+}
+@media screen and (min-width: 768px)
+{
+ h1 {
+ 	font-size: 125px;
+
+ }
+ h2 {
+ 	font-size: 30px;
+ }
+}
+@media screen and (min-width: 900px)
+{
+ h1 {
+ 	font-size: 135px;
+
+ }
+ h2 {
+ 	font-size: 33px;
+ }
+}
+@media screen and (min-width: 1050px)
+{
+ h1 {
+ 	font-size: 145px;
+
+ }
+ h2 {
+ 	font-size: 33px;
+ }
+}
+@media screen and (min-width: 1024px)
+{
+ h1 {
+ 	font-size: 145px;
+ 	letter-spacing: 2px;
+
+ }
+ h2 {
+ 	font-size: 33px;
+ }
+ .main-content {
+	padding: 0 50px;
+}
+}
+@media screen and (min-width: 1280px)
+{
+ h1 {
+ 	font-size: 150px;
+ 	letter-spacing: 2px;
+
+ }
+ h2 {
+ 	font-size: 33px;
+ }
+ .main-content {
+	padding: 0 70px;
+}
+}
+@media screen and (min-width: 1440px)
+{
+ h1 {
+ 	font-size: 165px;
+ 	letter-spacing: 2.2px;
+
+ }
+ h2 {
+ 	font-size: 36px;
+ }
+ .main-content {
+	padding: 0 80px;
+}
+}
+@media screen and (min-width: 1600px)
+{
+ h1 {
+ 	font-size: 185px;
+ 	letter-spacing: 2.2px;
+
+ }
+ h2 {
+ 	font-size: 38px;
+ }
+ .main-content {
+	padding: 0 90px;
+
+}
+}
+
+
+
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  position: absolute;
+  z-index: 1;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
 }

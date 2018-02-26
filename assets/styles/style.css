@@ -27,6 +27,11 @@ h2 {
 	font-size: 22px;
 	font-weight: 200;
 }
+
+h1,h2, a{
+	user-select: none;
+}
+
 .-animated {
 
 }

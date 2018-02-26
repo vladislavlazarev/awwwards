@@ -2,6 +2,8 @@ header {
 	height: 60px;
 	background-color: white;
 	box-shadow: 0 1px 5px #565656;
+	user-select: none;
+	z-index: 4;
 }
 
 header .container {
