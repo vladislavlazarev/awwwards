@@ -8,6 +8,7 @@ body, h1, h2, h3, h4, p, a, ul{
 	font-family: "Mont";
 	color: #565656;
 }
+
 body {
 	background-color: #f4f4f4;
 }
@@ -21,6 +22,7 @@ ul {
 
 h1 {
 	font-size: 90px;
+	color: #dddcd9;
 }
  
 h2 {

@@ -1,3 +1,4 @@
+
 header {
 	height: 60px;
 	background-color: white;
@@ -26,7 +27,7 @@ header .container {
 	position: relative;
 	height: 16px;
 	width: 30px;
-    z-index: 2;
+    z-index: 900;
 }
 .mobile-toggler i {
 	display: block;
@@ -35,14 +36,14 @@ header .container {
 	height: 2px;
 	margin-bottom: 6px;
     transition: .3s;
-
+	
 }
 .mobile-toggler i:last-child {
 
-
+z-index: 90;
 }
 .mobile-toggler i:first-child.-cross {
-	
+	z-index: 90;
 
 	display: none;
 }
@@ -50,11 +51,13 @@ header .container {
 	transform: rotate(-45deg);
 		margin: -1px;	
 	width: 26px;
+	z-index: 90;
 }
 .mobile-toggler i:last-child.-cross{
 	transform: rotate(45deg);
 	margin: 0;
 	width: 26px;
+	z-index: 900;
 }
 .mobile-menu {
 	position: fixed;
@@ -63,7 +66,7 @@ header .container {
 	right: 0;
 	bottom: 0;
 	background-color: white;
-	z-index: 1;
+	z-index: 4;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
