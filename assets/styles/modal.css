@@ -82,3 +82,32 @@
     transform: translateY(-50%);
   }
 }
+
+.aos-left {
+	width: 200px;
+	height: 170px;
+	background-color: red;
+	margin-bottom: 50px;
+
+	
+}
+.aos-parent-left {
+	
+	justify-content: left;
+	width: 100px;
+
+}
+.aos-parent-right {
+	
+	justify-content: right;
+	width: 100px;
+}
+.aos-right {
+	width: 200px;
+	height: 170px;
+	background-color: blue;
+	margin-bottom: 50px;
+	display: block;
+
+	
+}

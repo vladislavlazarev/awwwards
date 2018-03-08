@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	let modalToggler = $('.js-modal-toggler'),
 		modal = $('.modal'),
-		headerMobile = $('.header-mobile');
+		headerMobile = $('.header-mobile'),
 		modalElems = [
 		'.js-modal-github',
 		'.js-modal-vk',
@@ -17,9 +17,14 @@ $(document).ready(function() {
 		];
 	$(".mobile-toggler").click(function(){
 		modal.removeClass('-active')
-	});
-	$(".mobile-toggler").click(function(){
-		modalElems.toggleClass('-active')
+		for (let i = 0; i < modalElems.length; i++) {
+				let timeToWait = i * 200;
+				setTimeout(function() {
+				$(modalElems[i]).removeClass('-active');
+			}, 200 + timeToWait);
+		}		
+		
+	
 	});
 		$(".js-modal-toggler").click(function(){
 		headerMobile.removeClass('-is-open')
@@ -35,12 +40,23 @@ $(document).ready(function() {
 	});
 	$(".mobile-toggler").click(function(){
 		headerMobile.removeClass('-active')
+
+	});
+	$(".mobile-toggler").click(function(){
+		$('.mobile-info i').toggleClass('-active')
 	});
 
 	$(".mobile-toggler").click(function(){
 		$('.mobile-toggler i').toggleClass('-cross');
 	});
-	setTimeout(function(){
+	$(".mobile-toggler").click(function(){
+		$('.modal-map').removeClass('-active')
+	});
+	$(".mobile-toggler").click(function(){
+		$('.modal-info').removeClass('-active')
+	});
+
+		setTimeout(function(){
 		$(".-from-above").addClass("-animated");
 		$(".-from-bottom").addClass("-animated");
 	}, 800);
