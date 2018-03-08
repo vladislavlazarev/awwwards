@@ -15,15 +15,19 @@ $(document).ready(function() {
 		'.modal-map',
 		'.modal-toggler'
 		];
+	$(".mobile-toggler").click(function(){
+		modal.removeClass('-active')
+	});
+	$(".mobile-toggler").click(function(){
+		modalElems.toggleClass('-active')
+	});
 		$(".js-modal-toggler").click(function(){
 		headerMobile.removeClass('-is-open')
 	});
 		$(".js-modal-toggler").click(function(){
 		$('.mobile-toggler i').removeClass('-cross')
 	});
-		$(".mobile-toggler").click(function(){
-		modal.removeClass('-active')
-	});
+
 
 
 	$(".mobile-toggler").click(function(){
@@ -32,6 +36,7 @@ $(document).ready(function() {
 	$(".mobile-toggler").click(function(){
 		headerMobile.removeClass('-active')
 	});
+
 	$(".mobile-toggler").click(function(){
 		$('.mobile-toggler i').toggleClass('-cross');
 	});
