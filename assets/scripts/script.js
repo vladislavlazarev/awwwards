@@ -33,7 +33,12 @@ $(document).ready(function() {
 		$('.mobile-toggler i').removeClass('-cross')
 	});
 
-
+$(document).ready(function(){
+  $(".items-parent").owlCarousel({
+  	items: 1,
+  	loop: true
+  });
+});
 
 	$(".mobile-toggler").click(function(){
 		headerMobile.toggleClass('-is-open')
